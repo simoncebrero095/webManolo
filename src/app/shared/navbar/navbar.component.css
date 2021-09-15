@@ -1,0 +1,28 @@
+.menu{
+    background-color: #e9183b;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    box-shadow: 5px 0 10px rgba(0, 0,0, -6);
+}
+
+.logo{
+    color: #fff;
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight: bold
+};
+.menu_items li a {
+    border-radius: 3px;
+    margin: 0 5px; 
+};
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff; }

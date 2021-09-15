@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "webManolo"
+    }
+  },
+  "defaultProject": "webManolo",
+  "cli": {
+    "analytics": false
+  }
 }
