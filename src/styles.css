@@ -1,19 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "~bootstrap/dist/css/bootstrap.css";
-*, *::before,*::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
-
 }
-.menu_items{
-    display: flex;
-    list-style: none;
-    margin-right: 30px;
-};
-
