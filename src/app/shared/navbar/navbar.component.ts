@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,18 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+      private renderer:Renderer2,
+      private elmRef: ElementRef 
+      ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.renderer.setAttribute(this.elmRef.nativeElement, 'btn_menu', 'true');
+    const menu_items = document.querySelector('.menu_items')
+    menu_items.classList.toggle('show')
   }
-// --------------------------------------------------------------traducion a DOM en typescript 
-//   addEventListener('DOMContentLoad', () => {
-//       const btn_menu = document.querySelector('.btn_menu')
-//       if (btn_menu){
-//           btn_menu.addEventListener('click', () => {
-//             const menu_items = document.querySelector('.menu_items')
-//             menu_items.classList.toggle('show')
-//           })
-//       }
-// })
 }
